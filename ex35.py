@@ -57,4 +57,9 @@ def dead(why):
     print (why, 'Good job!')
     exit(0)
 
-cthulhu_room()
+def new_room():
+    print ('Here is the princess room.')
+    print ('She is a very pretty and rich woman.')
+    print ('Just she has a dragon and feed it the fresh meat.')
+    print ('Will you make a friend with the princess and avoid get ')
+    choice = input('> ')
