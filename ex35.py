@@ -53,6 +53,20 @@ def cthulhu_room():
     else:
         cthulhu_room()
 
+def new_room():
+    print ('Here is the witch\'s room.')
+    print ('She\'ll ask you a question.')
+    print ('If your answer is right, you\'ll pass. If not, you die.')
+    print ('Who is the most beautiful woman in the world?')
+
+    choice = input('> ')
+
+    if "you" or "witch" in choice:
+        print ("The answer is right, you'll pass.")
+        cthulhu_room()
+    else:
+        dead('Wrong answer.')
+
 def dead(why):
     print (why, 'Good job!')
     exit(0)
@@ -68,7 +82,7 @@ def start():
     if choice == 'left':
         bear_room()
     elif choice == 'right':
-        cthulhu_room()
+        new_room()
     else:
         dead('You stumble around the room until you starve.')
 
