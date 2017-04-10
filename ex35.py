@@ -58,8 +58,16 @@ def dead(why):
     exit(0)
 
 def new_room():
-    print ('Here is the princess room.')
-    print ('She is a very pretty and rich woman.')
-    print ('Just she has a dragon and feed it the fresh meat.')
-    print ('Will you make a friend with the princess and avoid get ')
+    print ('Here is the witch"s room.')
+    print ('She"ll ask you a question.')
+    print ('If your answer is right, you"ll pass. If not, you die.')
+    print ('Who is the most beautiful woman in the world?')
+
     choice = input('> ')
+
+    if choice == "you" or "witch":
+        print ("The answer is right, you'll pass.")
+        cthulhu_room()
+
+    else:
+        dead('Wrong answer.')
