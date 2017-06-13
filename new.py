@@ -1,1 +1,2 @@
-print ("Got something new. Keep up.")
+print ("Got something new.")
+print ("More stuff")
